@@ -1,5 +1,6 @@
 <?php
     //HOMEPAGE
+    // Copyright © 2021/2022 - Ciakmov - Simone Lutero & Eleonora Fabbri- all rights reserved. 
 ?>
 
 <!DOCTYPE html>
