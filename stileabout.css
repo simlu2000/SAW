@@ -1,0 +1,223 @@
+/* Large devices (laptops/desktops, 992px and up) */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+      background-color: black;
+      font-family: 'Poppins', sans-serif;
+      width: 100%;
+      color: white;
+      background-repeat: no-repeat;
+    }
+    
+    /*CONTAINER 1*/
+    #container1{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    h1{ font-size:82px; text-shadow: 0 0 25px #0084ff;}
+
+    #imgarea{
+        display: block;
+        float: right;
+
+        background-image: url(media/logo/logo.jpg);
+        background-position: center;
+        background-size: cover;
+
+        width: 350px;
+        height: 350px;
+
+        border-radius: 50%;
+        border: 5px solid #00A5E0;
+    }
+
+    .line{
+        color: white;
+        background-color: white;
+        height: 5px;
+        width: 90%;
+        margin-top: 30px;
+        margin-left: 5%;
+    }
+
+    .info{
+        display: block;
+        clear: both;
+        font-size: 42px;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    /*CONTAINER2*/
+    #container2{
+        color: black;
+        margin-top: 50px;
+        text-align: center;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        align-items:center;
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;   
+        
+        width: 300px;
+        height: 350px;
+        text-align: center;
+        background-color:#cde4ff;
+        border-radius:25px;
+    }
+
+    .boximg{
+        width:150px;
+        height:150px;
+
+        clip-path: circle(50%); /*bordo tondo*/
+        background-size:cover;
+        background-position:center;
+    }
+
+    .boxtitle{
+        font-size: 32px;
+    }
+
+    .boxinfo{
+        font-size: 20px;
+    }
+    
+    #img1{ background-image:url(media/icons/cinema.png); }
+    #img2{ background-image:url(media/icons/consigli.png); }
+    #img3{ background-image:url(media/icons/film.png);  }
+
+    /*CONTAINER 3*/
+    #container3{
+        text-align: center;    
+        border-radius:25px;
+
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+
+    .whobox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        
+        background-color:#cde4ff;
+        border-radius:25px;
+        width: 380px;
+        height: 380px;
+    }
+
+    #slimg,#efimg{
+        background-color:#ffffff;
+        width:200px;
+        height:200px;
+        clip-path: circle(50%); /*bordo tondo*/
+        font-size: 120px;
+        text-align: center;
+    }
+
+    #slemail,#efemail{
+        font-size: 20px;
+        color: black;
+    }
+
+    #infoab{
+        text-align: center;
+        color: black;
+        display: block;
+        justify-content: center; 
+        align-items: center;
+        border-radius:25px;
+        background-color:#cde4ff;
+        margin: 50px;
+    }
+    .infoab{
+        font-size: 18px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .ev{
+        font-size: 20px;
+        font-weight: bold;
+        background: none;
+    }
+
+
+/* Extra large devices (large laptops and desktops) */
+@media only screen and (min-width: 1201px){
+    
+  
+    
+  }
+  
+  
+  /* Tablet, 768px-1023x */
+  @media only screen and (min-width: 768px) and (max-width: 1023px){
+
+    
+  }
+  
+  
+  /*tablet orientamento verticale*/
+  @media only screen and (min-device-width: 481px) and (max-device-width:767px) {
+    
+  }
+  
+  
+  /*smartphone*/
+  @media only screen and (min-device-width: 100px) and (max-device-width:480px) {
+    #container1{
+        width: 90%;
+    }
+    h1{
+        font-size: 55px;
+    }
+    #container2{
+        flex-direction: column;
+        
+    }
+    .box{
+        margin-top: 30px;
+        width: 70%;
+        height: 350px;
+    }
+    .boxtitle{
+        font-size: 40px;
+    }
+    .boxinfo{
+        font-size: 30px;
+    }
+
+    #container3{
+        flex-direction: column;
+        align-items: center;
+    }
+    .whobox{
+        margin-top: 30px;
+        width: 70%;
+        height: 450px;
+    }
+    #slemail,#efemail{
+        font-size: 30px;
+    }
+
+  
+  }

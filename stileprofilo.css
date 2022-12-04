@@ -1,0 +1,200 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color:black;
+    width: 100%;
+  }
+
+  a{ text-decoration: none; color: white; }
+
+  .label{
+    float: left;
+  }
+
+  /*STILE PAGINA PROFILO*/
+  
+  #profiletitle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #ciao{ font-size: 100px; text-shadow: 0 0 25px #0084ff;}
+  #nameuser{  color:#00A5E0; text-shadow: none; }
+  #tip{ font-size: 50px; text-shadow: 0 0 25px #0084ff;}
+
+  #profileline{
+    color: white;
+    background-color: white;
+    height: 5px;
+    width: 90%;
+    margin-top: 30px;
+    margin-left: 5%;
+  }
+
+  #boxshow{
+    width: 70%;
+    height: auto; 
+
+    background-color: #cde4ff;
+    color: black;
+    font: 18px 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    
+    border-radius: 40px;
+    box-shadow: 10px 10px 20px white;
+
+    margin: 5% auto; /* box al centro della pagina*/  
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  table tr{
+    display: table-caption;
+    vertical-align: middle;
+  }
+  table td input {
+    width: 300px;
+    height: 30px;
+    border-radius: 15px; 
+    font-size: 16px;
+    vertical-align: sub;
+    background-color: white;
+        
+  }
+  select{
+    width: auto; height: 23px;
+    font-size: 18px;
+    margin-left: 10px;
+    vertical-align: top;
+    background-color: white;
+
+  }
+  select option{
+    font-size: 18px;
+  }
+  
+  #sb{               /*tasto 'Modifica' */
+    text-decoration: none;
+    background-color:#00A5E0;
+    font-size: 18px;
+    color: white;
+    border-radius: 25px;
+    border: none;
+
+    width: 110px;
+    height: 60px;
+
+    float: left;
+    margin-top: 25px;
+
+    
+  }
+  #sb:hover{
+    opacity: 0.8;
+    background-color: #00A5E0;
+    box-shadow: 5px 5px 10px black;
+    cursor: pointer;
+  }
+  
+  #cs{              /* tasto 'Cambia Password' */     
+    text-decoration: none;
+    background-color:#00A5E0;
+    font-size: 18px;
+    color: white;
+    border-radius: 25px;
+    border:none;
+    
+    width: 110px;
+    height: 60px; 
+    
+    margin-top: -60px;
+    margin-left: 200px;
+  }
+  #cs:hover{
+    opacity: 0.8;
+    box-shadow: 5px 5px 10px black;
+    cursor: pointer;
+  }
+
+
+  #save,#updatebtn{                 /* tasto 'Salva' di changepassword.php  & updateform.php  */ 
+    text-decoration: none;
+    background-color:#00A5E0;
+    font-size: 18px;
+    color: white;
+    border-radius: 25px;
+    border:none;
+
+    width: 100px;
+    height: 50px;   
+    margin-left: 20px;           
+  }
+  #save:hover{
+    opacity: 0.8;
+    box-shadow: 5px 5px 10px black;
+    cursor: pointer;
+  }
+  #updatebtn:hover{
+    opacity: 0.8;
+    box-shadow: 5px 5px 10px black;
+    cursor: pointer;
+  }
+
+#newsletterbutton{
+    text-decoration: none;
+    background-color:black;
+    font-size: 18px;
+    color: #00A5E0;
+    font-weight: bold;
+    border-radius: 25px;
+    border: none;
+
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+}
+#newsletterbutton:hover{
+  box-shadow: 5px 5px 10px black;
+  cursor: pointer;
+}
+  
+
+ /* Smartphone [portrait & lanscape], 320px-480px*/
+@media only screen and (min-device-width: 320px) and (max-device-width:480px) {
+
+
+
+}
+
+/* Tablet, 768px-1023x */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+#sb{               /*tasto 'Modifica' */
+
+  width: 110px;
+  height: 60px;
+
+}
+
+#email,#firstname,#lastname,#pass,#city,#kindoffilm{
+  height:50px;
+}
+
+
+}
+
+
+  
+  

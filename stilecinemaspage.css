@@ -1,0 +1,221 @@
+/* Large devices (laptops/desktops, 992px and up) */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+  }
+
+
+
+  /*div titolo*/
+  #container1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    color: white;
+  }
+
+  h1{ font-size:82px; text-shadow: 0 0 25px #0084ff;}
+
+  #imgarea{
+    display: block;
+    float: right;
+
+    background-image: url(media/icons/cinema.png);
+    background-position: center;
+    background-size: cover;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+    border: 5px solid #00A5E0;
+  }
+
+  #cinemaline{
+    color: white;
+    background-color: white;
+    height: 5px;
+    width: 90%;
+    margin-top: 30px;
+    margin-left: 5%;
+  }
+
+/*Area di ricerca*/ 
+#searchcinema{
+  /*text-align: center;
+  position:absolute;
+  margin-top:100px;
+  margin-left:550px;*/
+  text-align: center;
+  display: block;
+  justify-content: center;
+  padding-top: 50px; 
+}
+#searcharea{
+  /*margin-top:40px;
+  border-radius:25px;
+  block-size: 25px;
+  width: 350px;
+  height: 30px;*/
+  width: 25%;
+  height: 40px;
+  border-radius: 25px;  
+}    
+#searchbtn{
+  width: 60px; 
+  height: 60px;
+  border-radius: 50px;
+  font-size: 15px;
+}
+#searchbtn:hover{
+  text-shadow: 0 0 20px 0 #00A5E0;
+  cursor: pointer;
+}
+
+  
+/*div cinema*/
+      
+#cinemalist{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: black;
+  /*position: absolute;*/
+  margin-top: 40px; 
+  margin-bottom: 40px;       
+}
+
+/*BOX FILM INFO*/
+#cinemabox{
+  width: 65%;
+  height: auto; /*650px*/
+   
+  background-color:#D9F5FC;
+  border-radius: 25px;
+  box-shadow: 0 0 50px white;
+  font-family: 'Poppins', sans-serif;
+
+  margin-left: 10%;
+  margin-top: 80px;
+  margin-bottom: 20px;       
+}
+
+.infointest{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.cinemaname{
+  display: flex;
+  text-align: center;
+  margin-top: 30px;
+  justify-content: center;
+}
+#name{  font-size: 65px; text-shadow: none;}
+.info{
+  width: 70%;
+  float: right;
+  text-align: left;
+  /*margin-top: 25px;*/
+  font-size: 20px;
+}
+h2{
+  margin-top: 15px;
+}
+
+#finger{
+  font-size:36px; text-decoration: none;
+}
+#finger:hover{  text-shadow: 0 0 20px 0 black;}
+
+
+   /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+  #cinemalist{
+    width: 90%;
+  }
+  .btncinema{
+    margin-left: 150px;
+    margin-top: 50px;
+  }
+  /*.popupinfo{
+    margin-left: 25%;
+  }*/
+  
+  
+
+}
+
+/*tablet*/
+@media only screen and (min-width: 768px) and (max-width:1026px){
+  #container1{
+    width: 90%;
+}
+  #buttons{
+    margin-left: 25%;
+  }
+  #cinemagallery{
+    width: 80%;
+  }
+  .btncinema{
+    width: 250px;
+    height: 60px; 
+  }
+  .popupinfo{
+    width: 450px;
+    /*margin-left: 25%;*/
+    margin: 5% 15% ;
+
+  }
+
+}
+
+/* Smartphone , 100px-480px*/
+@media only screen and (min-device-width: 100px) and (max-device-width:480px) {
+  #container1{
+      width: 90%;
+  }
+  #buttons{
+    margin-left: 15%;
+  }
+  .btncinema{
+    width: 450px;
+    height: 100px;
+
+    float: none;
+    margin-left: 25%;
+    margin-top: 20px;
+  }
+  .popupinfo{
+    width: 600px;
+    font-size: 22px;
+    /*margin-left: 15%;*/
+    margin: 0 5% ;
+  }
+  .infoc{
+    font-size: 52px;
+  }
+
+  #titc{
+    font-size:76px;
+  }
+
+}
